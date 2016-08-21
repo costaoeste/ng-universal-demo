@@ -85,6 +85,17 @@ export class About {
       </main>
 
       <blockquote>{{ server }}</blockquote>
+      
+      <ul>
+          <li>
+            <a [routerLinkActive]="['active', 'router-link-active']" [routerLink]=" ['./explore/',3]  ">Explore 3</a>
+          </li>
+          
+          <li>
+            <a [routerLinkActive]="['active', 'router-link-active']" [routerLink]=" ['./explore/',2]  ">Explore 2</a>
+          </li>
+      </ul>
+      
     </div>
   </div>
   `

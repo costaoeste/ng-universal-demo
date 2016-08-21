@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {FollowersService} from "../followers.service";
-import {App} from "../app.component";
 import {User} from "../user";
 
 @Component({
@@ -10,7 +9,7 @@ import {User} from "../user";
     'home.style.css'
   ],
   templateUrl: 'home.template.html',
-  providers:[FollowersService,App]
+  providers:[FollowersService]
 
 })
 export class Home implements OnInit{
