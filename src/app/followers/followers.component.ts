@@ -1,6 +1,6 @@
-import {User} from "../user";
 import {FollowersService} from "../followers.service";
 import {OnInit, Component} from "@angular/core";
+import {User} from "../model/user";
 
 @Component({
   selector: 'git-followers',

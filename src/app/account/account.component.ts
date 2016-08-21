@@ -1,18 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 import {FollowersService} from "../followers.service";
-import {User} from "../user";
+import {User} from "../model/user";
 
 @Component({
-  moduleId: __filename,
-  selector: 'home',
+  selector: 'account',
   styleUrls: [
-    'home.style.css'
+    'account.style.css'
   ],
-  templateUrl: 'home.template.html',
+  templateUrl: 'account.template.html',
   providers:[FollowersService]
 
 })
-export class Home implements OnInit{
+export class Account implements OnInit{
 
   private _username;
   user:User;

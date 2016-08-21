@@ -4,10 +4,10 @@ import { Http } from '@angular/http';
 
 
 // templateUrl example
-import { Home } from './home';
 import {ListFollowersComponent} from "./followers/followers.component";
 import {FollowersService} from "./followers.service";
 import {NavBarComponent} from "./ui/navbar/navbar.component";
+import {Main} from "./container/main/main";
 //
 /////////////////////////
 // ** Example Directive
@@ -48,7 +48,8 @@ export class About {
   directives: [
     ...ROUTER_DIRECTIVES,
     XLarge,
-    NavBarComponent
+    NavBarComponent,
+    Main
   ],
   styles: [`
    
@@ -69,9 +70,8 @@ export class About {
       <pre>{{ data | json }}</pre>
 
       <strong>Router-outlet:</strong>
-      <main>
-        <router-outlet></router-outlet>
-      </main>
+      <main-container>
+      </main-container>
 
       <blockquote>{{ server }}</blockquote>
       

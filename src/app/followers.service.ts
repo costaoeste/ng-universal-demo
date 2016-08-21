@@ -3,7 +3,7 @@ import 'rxjs/add/operator/toPromise';
 import {Observable} from "rxjs";
 import {Injectable} from "@angular/core";
 import {Http} from "@angular/http";
-import {User} from "./user";
+import {User} from "./model/user";
 
 @Injectable()
 export class FollowersService{
