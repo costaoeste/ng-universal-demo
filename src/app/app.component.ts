@@ -64,8 +64,8 @@ export class About {
   `],
   template: `
   <nav>
-    <a [routerLinkActive]="['active', 'router-link-active']" [routerLink]=" ['./home'] ">My account</a>
-    <a [routerLinkActive]="['active', 'router-link-active']" [routerLink]=" ['./about'] ">Followers</a>
+    <a [routerLinkActive]="['active', 'router-link-active']" [routerLink]=" ['./account'] ">My account</a>
+    <a [routerLinkActive]="['active', 'router-link-active']" [routerLink]=" ['./followers'] ">Followers</a>
   </nav>
   <div class="hero-universal">
     <div class="inner-hero">

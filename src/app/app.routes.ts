@@ -3,8 +3,8 @@ import { Home } from './home';
 import { About } from './app.component';
 
 export const routes: RouterConfig = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: Home },
-  { path: 'about', component: About },
-  { path: '**', redirectTo: 'home' }
+  { path: '', redirectTo: 'account', pathMatch: 'full' },
+  { path: 'account', component: Home },
+  { path: 'followers', component: About },
+  { path: '**', redirectTo: 'account' }
 ];
