@@ -6,7 +6,7 @@ import { Http } from '@angular/http';
 // templateUrl example
 import { Home } from './home';
 import {ListFollowersComponent} from "./followers/followers.component";
-import {FollowersService} from "../backend/followers.service";
+import {FollowersService} from "./followers.service";
 //
 /////////////////////////
 // ** Example Directive

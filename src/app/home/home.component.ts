@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FollowersService} from "../../backend/followers.service";
+import {FollowersService} from "../followers.service";
 import {App} from "../app.component";
 import {User} from "../user";
 
