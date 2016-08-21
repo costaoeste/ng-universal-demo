@@ -1,0 +1,24 @@
+{
+  "name": "universal-starter",
+  "description": "Angular 2 Universal starter kit by @AngularClass",
+  "main": "",
+  "authors": [
+    "AngularClass <hello@angularclass.com>",
+    "PatrickJS <patrick@angularclass.com>",
+    "Jeff Whelpley <jeff@gethuman.com>",
+    "Jeff Cross <crossj@google.com>",
+    "Mark Pieszak <mpieszak84@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-input": "^1.1.17"
+  }
+}

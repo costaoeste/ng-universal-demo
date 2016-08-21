@@ -1,0 +1,13 @@
+<div class="home">
+
+  <div *ngIf="isLoading">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div>
+
+  <div *ngIf="!isLoading">
+    <a *ngIf="user!=undefined" href="{{user.url}}">
+      <h1 *ngIf="user!=undefined">@{{user.login}}</h1>
+    </a>
+    <img class="avatar" *ngIf="user!=undefined" src="{{user.avatar_url}}">
+  </div>
+</div>
