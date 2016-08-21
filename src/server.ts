@@ -42,6 +42,9 @@ app.get('/followers', ngApp);
 app.get('/followers/*', ngApp);
 app.get('/account', ngApp);
 app.get('/account/*', ngApp);
+app.get('/explore', ngApp);
+app.get('/explore/*', ngApp);
+
 
 // use indexFile over ngApp only when there is too much load on the server
 function indexFile(req, res) {
