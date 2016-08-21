@@ -1,4 +1,4 @@
-import {User} from "../../models/user";
+import {User} from "../user";
 import {FollowersService} from "../../backend/followers.service";
 import {OnInit, Component} from "@angular/core";
 

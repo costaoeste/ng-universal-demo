@@ -1,7 +1,7 @@
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 import {Observable} from "rxjs";
-import {User} from "../models/user ";
+import {User} from "../app/user ";
 import {Injectable} from "@angular/core";
 import {Http} from "@angular/http";
 

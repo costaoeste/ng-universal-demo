@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FollowersService} from "../../backend/followers.service";
-import {User} from "../../models/user";
 import {App} from "../app.component";
+import {User} from "../user";
 
 @Component({
   moduleId: __filename,
