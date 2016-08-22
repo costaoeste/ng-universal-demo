@@ -6,8 +6,10 @@
       name="newNoteTitle"
       placeholder="Title"
       class="col-xs-10 title"
+      *ngIf="fullForm"
     >
     <input
+      (focus)="toggle(true)"
       type="text"
       [(ngModel)]="newNote.value"
       (ngModelChange)="newNote.value = $event"
@@ -15,7 +17,9 @@
       placeholder="Take a note..."
       class="col-xs-10"
     >
-    <div class="actions col-xs-12 row between-xs">
+    <div class="actions col-xs-12 row between-xs"
+         *ngIf="fullForm"
+    >
       <button
         type="submit"
         class="btn-light"

@@ -16,6 +16,8 @@ export class NoteCreatorComponent{
     title:"",value:""
   };
 
+  fullForm:boolean = false;
+
   onCreateNote(){
     const {title,value} = this.newNote;
 
@@ -29,6 +31,10 @@ export class NoteCreatorComponent{
     this.newNote={
       title:"",value:""
     };
+  }
+
+  toggle(value:boolean){
+    this.fullForm = value;
   }
 
 }
