@@ -15,12 +15,7 @@ import {NoteService} from "../../services/notes";
 })
 export class Notes implements OnInit{
 
-  notes = [
-    {title:'new note',value:'note here',color:'seagreen'},
-    {title:'new note',value:'note here',color:'lightblue'},
-    {title:'new note',value:'note here',color:'seagreen'}
-
-  ]
+  notes = [];
 
   constructor(private noteService:NoteService){
     this.noteService.getNotes().subscribe(res => this.notes = res.data);
@@ -30,7 +25,11 @@ export class Notes implements OnInit{
   }
 
   onNoteChecked(note,index){
-    this.notes.splice(index,1);
+    this.noteService.completeNote(note).subscribe(note => {
+      const i = this.notes.findIndex(localNote => localNote.id === note.id);
+      this.notes.splice(index,1);
+
+    })
   }
 
   onCreateNote(note){
