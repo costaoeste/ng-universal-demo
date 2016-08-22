@@ -18,7 +18,7 @@ export class NoteCreatorComponent{
     title:"",value:"",color:"white"
   };
 
-  colors: Array = [
+  colors: Array<string> = [
     'rgb(255, 138, 128)',
     'rgb(255, 209, 128)',
     'rgb(255, 255, 141)',
@@ -36,6 +36,7 @@ export class NoteCreatorComponent{
     if(title && value){
       this.createNote.emit({title,value,color});
       this.reset();
+      this.toggle(false);
     }
   }
 

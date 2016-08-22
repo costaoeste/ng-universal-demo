@@ -1,4 +1,4 @@
-import {FollowersService} from "../followers.service";
+import {FollowersService} from "../services/followers.service";
 import {OnInit, Component} from "@angular/core";
 import {User} from "../model/user";
 

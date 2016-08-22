@@ -5,7 +5,7 @@ import { Http } from '@angular/http';
 
 // templateUrl example
 import {ListFollowersComponent} from "./followers/followers.component";
-import {FollowersService} from "./followers.service";
+import {FollowersService} from "./services/followers.service";
 import {NavBarComponent} from "./ui/navbar/navbar.component";
 import {Main} from "./container/main/main";
 //
