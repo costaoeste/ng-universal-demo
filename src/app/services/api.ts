@@ -9,6 +9,8 @@ export class ApiService{
 
   headers : Headers = new Headers({
     'Content-Type':'application/json',
+    'X-Parse-Application-Id': 'xxx',
+    'X-Parse-REST-API-Key':'yyy',
     Accept: 'application/json'
   });
 
@@ -56,6 +58,25 @@ export class ApiService{
 
 
   constructor(private _http:Http){}
+
+  /*getUsers() {
+    return this._http.get('https://api.parse.com/1/classes/Persons', {
+      headers: this.headers
+    }).map((response:any)=> {
+      return response.json();
+    })
+      .map((users:any) => {
+        let result:UserItem[] = [];
+        if (users && users.results) {
+          users.results.forEach((user)=> {
+            result.push(new UserItem(user.objectId, user.FullName,
+              user.Email, user.Address, user.Age));
+          });
+        }
+        this._users = this._users.concat(result);
+        return result;
+      });
+  }*/
 
 
 

@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {NoteCardComponent} from "../../ui/note-card/note-card.component";
 import {NoteCreatorComponent} from "../../ui/note-creator/note-creator.component";
+import {NoteService} from "../../services/notes";
 
 
 @Component({
@@ -21,8 +22,8 @@ export class Notes implements OnInit{
 
   ]
 
-  constructor(){
-
+  constructor(private noteService:NoteService){
+    this.noteService.getNotes().subscribe(res => this.notes = res.data);
   }
 
   ngOnInit() {
@@ -33,7 +34,7 @@ export class Notes implements OnInit{
   }
 
   onCreateNote(note){
-    this.notes.push(note);
+    this.noteService.createNote(note).subscribe(note => this.notes.push(note));
   }
 
 }
